@@ -13,7 +13,7 @@ print("P = ParamSpec('P')")
 for number in range(1, 256):
     print(f"R{number} = TypeVar('R{number}')")
 
-for signature in reversed(overloads):
+for signature in overloads:
     print('@overload')
     print(f'{signature}:')
     print('    ...')

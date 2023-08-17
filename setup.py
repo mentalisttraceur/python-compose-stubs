@@ -19,7 +19,7 @@ with open(readme_path) as readme_file:
 
 setup(
     name='compose-stubs',
-    version='0.0.3',
+    version='0.0.4',
     description='Type stubs for compose',
     long_description=long_description,
     license='0BSD',
