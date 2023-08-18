@@ -17,7 +17,7 @@ with open(readme_path) as readme_file:
 
 setup(
     name='compose-stubs',
-    version='0.2.0',
+    version='1.0.0',
     description='Type stubs for compose',
     long_description=long_description,
     license='0BSD',
@@ -25,7 +25,7 @@ setup(
     author='Alexander Kozhevnikov',
     author_email='mentalisttraceur@gmail.com',
     classifiers=[
-        'Development Status :: 4 - Beta',
+        'Development Status :: 5 - Production/Stable',
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',
     ],
