@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 
-import errno
 import os
-import sys
 
 try:
     from setuptools import setup
@@ -19,7 +17,7 @@ with open(readme_path) as readme_file:
 
 setup(
     name='compose-stubs',
-    version='0.1.0',
+    version='0.2.0',
     description='Type stubs for compose',
     long_description=long_description,
     license='0BSD',
@@ -27,7 +25,7 @@ setup(
     author='Alexander Kozhevnikov',
     author_email='mentalisttraceur@gmail.com',
     classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 4 - Beta',
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',
     ],
