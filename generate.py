@@ -10,14 +10,7 @@ def _async_callable(parameters, return_):
 
 
 def _sync_or_async_callable(parameters, return_):
-    awaitable = f'Awaitable[{return_}]'
-    sometimes_awaitable = f'Union[{return_}, Awaitable[{return_}]]'
-
-    sync = f'Callable[{parameters}, {return_}]'
-    async_ = f'Callable[{parameters}, {awaitable}]'
-    sometimes_async = f'Callable[{parameters}, {sometimes_awaitable}]'
-
-    return f'Union[{sync}, {async_}, {sometimes_async}]'
+    return f'Callable[{parameters}, Union[{return_}, Awaitable[{return_}]]]'
 
 
 def _overload(name, arguments, return_):
