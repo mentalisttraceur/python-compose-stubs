@@ -38,3 +38,7 @@ for x in _overloads('compose', _sync_callable, _sync_callable):
     print(x)
 for x in _overloads('acompose', _sync_or_async_callable, _async_callable):
     print(x)
+for x in _overloads('sacompose', _sync_callable, _sync_callable):
+    print(x)
+for x in _overloads('sacompose', _sync_or_async_callable, _async_callable):
+    print(x)
