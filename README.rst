@@ -1,7 +1,7 @@
 compose-stubs
 =============
 
-`Typing stubs <https://peps.python.org/pep-0561/#stub-only-packages>`_
+`Type stubs <https://peps.python.org/pep-0561/#stub-only-packages>`_
 for |compose|_.
 
 .. |compose| replace:: ``compose``
@@ -27,16 +27,16 @@ Usage
 -----
 
 Like any other typing stub package, once installed it should
-"just work". You might need to restart your type-checker.
+"just work". You might need to restart your type checker.
 
 
 Limitations
 -----------
 
-1. MyPy seems unable to handle type-checking compositions
-   of ``async`` functions, returning false errors about
-   types not matching. (Only affects use of ``acompose`` and
-   ``sacompose``.) (Pyright and Pyre don't have this problem.)
+1. MyPy seems unable to handle ``async`` function composition,
+   and reports false errors about types not matching.
+   (Only affects ``acompose`` and ``sacompose``.)
+   (Pyright and Pyre don't have this problem.)
 
 2. Due to limitations in Python type hints, these typing stubs
    only cover at most 16 arguments in a single call to ``compose``,
